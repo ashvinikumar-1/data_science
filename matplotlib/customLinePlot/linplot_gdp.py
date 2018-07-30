@@ -41,6 +41,10 @@ life_exp = [43.828, 76.423, 72.301, 42.731, 75.32, 81.235, 79.829, 75.635, 64.06
             62.698, 42.38399999999999, 43.487]
 
 
+# Definition of tick_val and tick_lab
+tick_val = [1000, 10000, 100000]
+tick_lab = ['1k', '10k', '100k']
+
 # Make a line plot, gdp_cap on the x-axis, life_exp on the y-axis
 plt.plot(gdp_cap, life_exp)
 
@@ -50,6 +54,9 @@ plt.ylabel(ylab)
 
 # add title
 plt.title(title)
+
+# Adapt the ticks on the x-axis
+plt.xticks(tick_val, tick_lab)
 
 # Display the plot
 plt.show()
